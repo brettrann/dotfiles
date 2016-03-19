@@ -81,6 +81,7 @@ brew install xpdf
 brew install xz
 
 # Install other useful binaries.
+brew install ag
 brew install ack
 brew install dark-mode
 #brew install exiv2
@@ -100,6 +101,28 @@ brew install testssl
 brew install tree
 brew install webkit2png
 brew install zopfli
+
+# install soem casks
+brew cask install dropbox
+brew cask install firefox
+brew cask install flash
+brew cask install google-chrome
+brew cask install sublime-text
+brew cask install transmission
+brew cask install 1password-beta
+brew cask install iterm2-beta
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
+brew cask install little-snitch
+
+# and some more
+brew install zsh-completions
+brew install chruby
+brew install ruby-install
+brew install autojump
+brew install python
+brew install python3
+brew install powerline
 
 # Remove outdated versions from the cellar.
 brew cleanup
