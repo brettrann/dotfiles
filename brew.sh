@@ -30,6 +30,7 @@ brew install gnu-sed --with-default-names
 # running `chsh`.
 brew install bash
 brew tap homebrew/versions
+brew tap caskroom/versions
 brew install bash-completion2
 
 # Install `wget` with IRI support.
@@ -113,12 +114,17 @@ brew cask install 1password-beta
 brew cask install iterm2-beta
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+brew cask install dockertoolbox
 brew cask install little-snitch
+brew cask install flowdock
+brew cask install steam
+brew cask install slack
 
 # and some more
 brew install zsh-completions
 brew install chruby
 brew install ruby-install
+brew install rbenv
 brew install autojump
 brew install python
 brew install python3

@@ -32,6 +32,12 @@ elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
 
+#chruby
+  [[ -s $(brew --prefix)/opt/chruby/share/chruby/chruby.sh ]] && . $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+  [[ -s $(brew --prefix)/opt/chruby/share/chruby/auto.sh ]] && . $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+#autojump
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 	complete -o default -o nospace -F _git g;
@@ -46,3 +52,16 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+
+if type -p rbenv >/dev/null; then
+  if [ -d /usr/local/var/rbenv ]; then
+  export RBENV_ROOT=/usr/local/var/rbenv
+  fi
+  eval "$(rbenv init -)"
+fi
+
+# ADDED BY DOCKER-IMAGES
+source /Users/brann/Code/zendesk/docker-images/dockmaster/zdi.sh
