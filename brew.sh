@@ -31,6 +31,8 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew tap homebrew/versions
 brew tap caskroom/versions
+# 1password for terminal
+brew tap ravenac95/sudolikeaboss
 brew install bash-completion2
 
 # Install `wget` with IRI support.
@@ -103,6 +105,10 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
+
+brew install lastpass-cli
+brew cask install lastpass
+
 # install soem casks
 brew cask install dropbox
 brew cask install firefox
@@ -119,6 +125,14 @@ brew cask install little-snitch
 brew cask install flowdock
 brew cask install steam
 brew cask install slack
+brew cask install monodraw
+
+# zendesk
+brew cask install chefdk
+brew cask install vagrant
+brew cask install virtualbox
+brew install rbenv
+brew install ruby-build
 
 # and some more
 brew install zsh-completions
@@ -129,6 +143,9 @@ brew install autojump
 brew install python
 brew install python3
 brew install powerline
+
+# 1password in terminal
+brew install sudolikeaboss
 
 # Remove outdated versions from the cellar.
 brew cleanup
