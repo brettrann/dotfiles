@@ -69,6 +69,7 @@ brew install fcrackzip
 brew install foremost
 brew install hashpump
 brew install hydra
+brew install htop
 brew install john
 brew install knock
 brew install netpbm
@@ -126,13 +127,20 @@ brew cask install flowdock
 brew cask install steam
 brew cask install slack
 brew cask install monodraw
+brew cask install mou
+brew cask install flux
+# used for reassigning capslock
+brew cask install seil
 
 # zendesk
 brew cask install chefdk
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install fluid
 brew install rbenv
 brew install ruby-build
+brew install tmux
+brew install tig
 
 # and some more
 brew install zsh-completions
