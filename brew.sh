@@ -141,6 +141,7 @@ brew install rbenv
 brew install ruby-build
 brew install tmux
 brew install tig
+brew install iperf
 
 # and some more
 brew install zsh-completions
